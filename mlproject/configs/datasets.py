@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Any, Optional
 
-from package_name.base.utils.typing_utils import get_module_import_path
-from package_name.configs.base import DatasetConfig
-from package_name.data.datasets import (
+from mlproject.base.utils.typing_utils import get_module_import_path
+from mlproject.configs.base import DatasetConfig
+from mlproject.data.datasets import (
     ChallengeSamplesSourceTypes,
     DummyMultiModalDataset,
     InstagramImageTextMultiModalDataset,

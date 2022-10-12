@@ -3,7 +3,7 @@ from typing import List
 
 from torch.optim import AdamW
 
-from package_name.base.utils.typing_utils import get_module_import_path
+from mlproject.base.utils.typing_utils import get_module_import_path
 
 
 @dataclass

@@ -9,13 +9,13 @@ from pytorch_lightning.callbacks import (
     TQDMProgressBar,
 )
 
-from package_name.base.callbacks.wandb_callbacks import (
+from mlproject.base.callbacks.wandb_callbacks import (
     LogConfigInformation,
     LogGrads,
     UploadCodeAsArtifact,
 )
-from package_name.base.utils.typing_utils import get_module_import_path
-from package_name.configs.string_variables import CHECKPOINT_DIR
+from mlproject.base.utils.typing_utils import get_module_import_path
+from mlproject.configs.string_variables import CHECKPOINT_DIR
 
 
 @dataclass

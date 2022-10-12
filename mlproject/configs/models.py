@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Any
 
-from package_name.base.utils.typing_utils import get_module_import_path
-from package_name.models.image_text_models import CLIPImageTextModel
+from mlproject.base.utils.typing_utils import get_module_import_path
+from mlproject.models.image_text_models import CLIPImageTextModel
 
 
 @dataclass

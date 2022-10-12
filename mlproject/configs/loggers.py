@@ -5,11 +5,8 @@ from typing import List, Optional
 
 from pytorch_lightning.loggers import TensorBoardLogger, WandbLogger
 
-from package_name.base.utils.typing_utils import get_module_import_path
-from package_name.configs.string_variables import (
-    CURRENT_EXPERIMENT_DIR,
-    EXPERIMENT_NAME,
-)
+from mlproject.base.utils.typing_utils import get_module_import_path
+from mlproject.configs.string_variables import CURRENT_EXPERIMENT_DIR, EXPERIMENT_NAME
 
 
 @dataclass

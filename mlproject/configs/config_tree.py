@@ -4,8 +4,8 @@ from typing import Any, List, Optional
 
 from omegaconf import OmegaConf
 
-from package_name.base.utils import get_logger
-from package_name.configs.callbacks import (
+from mlproject.base.utils import get_logger
+from mlproject.configs.callbacks import (
     LearningRateMonitor,
     LogConfigInformation,
     LogGrads,

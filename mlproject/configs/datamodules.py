@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 from typing import Any
 
-from package_name.base.utils.typing_utils import get_module_import_path
-from package_name.configs.base import DataLoaderConfig
-from package_name.configs.datasets import InstagramImageTextMultiModalDatasetConfig
-from package_name.configs.string_variables import DATASET_DIR
-from package_name.data.datamodules import InstagramImageTextDataModule
+from mlproject.base.utils.typing_utils import get_module_import_path
+from mlproject.configs.base import DataLoaderConfig
+from mlproject.configs.datasets import InstagramImageTextMultiModalDatasetConfig
+from mlproject.configs.string_variables import DATASET_DIR
+from mlproject.data.datamodules import InstagramImageTextDataModule
 
 
 @dataclass

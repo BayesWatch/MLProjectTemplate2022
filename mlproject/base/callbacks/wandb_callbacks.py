@@ -8,7 +8,7 @@ from pytorch_lightning.loggers import LoggerCollection, WandbLogger
 from pytorch_lightning.utilities import rank_zero_only
 from torch.optim import Optimizer
 
-from package_name.base import utils
+from mlproject.base import utils
 
 log = utils.get_logger(__name__)
 

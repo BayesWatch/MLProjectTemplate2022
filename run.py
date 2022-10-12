@@ -14,19 +14,19 @@ install(show_locals=False, extra_lines=1, word_wrap=True, width=350)
 
 
 def collect_config_store():
-    from package_name.configs.config_tree import Config, base_callbacks, wandb_callbacks
-    from package_name.configs.datamodules import (
+    from mlproject.configs.config_tree import Config, base_callbacks, wandb_callbacks
+    from mlproject.configs.datamodules import (
         InstagramImageTextMultiModalDataModuleConfig,
     )
-    from package_name.configs.hydra import add_hydra_configs
-    from package_name.configs.loggers import (
+    from mlproject.configs.hydra import add_hydra_configs
+    from mlproject.configs.loggers import (
         TensorboardLoggerConfig,
         WeightsAndBiasesLoggerConfig,
     )
-    from package_name.configs.mode import BaseMode
-    from package_name.configs.models import CLIPImageTextMultiModalDatasetConfig
-    from package_name.configs.optimizers import AdamWOptimizerConfig
-    from package_name.configs.trainers import (
+    from mlproject.configs.mode import BaseMode
+    from mlproject.configs.models import CLIPImageTextMultiModalDatasetConfig
+    from mlproject.configs.optimizers import AdamWOptimizerConfig
+    from mlproject.configs.trainers import (
         BaseTrainer,
         DDPTrainer,
         DPTrainer,
@@ -106,8 +106,8 @@ def main(config: DictConfig):
 
     # Imports can be nested inside @hydra.main to optimize tab completion
     # https://github.com/facebookresearch/hydra/issues/934
-    from package_name.base import utils
-    from package_name.train_eval import train_eval
+    from mlproject.base import utils
+    from mlproject.train_eval import train_eval
 
     # A couple of optional utilities:
     # - disabling python warnings

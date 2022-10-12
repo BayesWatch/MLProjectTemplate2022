@@ -1,6 +1,6 @@
 import torch
 
-from package_name.base import utils
+from mlproject.base import utils
 
 log = utils.get_logger(__name__)
 

@@ -8,8 +8,8 @@ from torchvision.transforms.functional import normalize
 from transformers import CLIPModel, CLIPProcessor
 from transformers.models.clip.modeling_clip import contrastive_loss
 
-from package_name.base.utils import get_logger
-from package_name.data.tokenizers import HuggingFaceBPETokenizer
+from mlproject.base.utils import get_logger
+from mlproject.data.tokenizers import HuggingFaceBPETokenizer
 
 log = get_logger(__name__)
 
