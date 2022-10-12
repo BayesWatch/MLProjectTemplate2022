@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 from typing import Any
 
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.configs.base import DataLoaderConfig
-from capit.configs.datasets import InstagramImageTextMultiModalDatasetConfig
-from capit.configs.string_variables import DATASET_DIR
-from capit.data.datamodules import InstagramImageTextDataModule
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.configs.base import DataLoaderConfig
+from package_name.configs.datasets import InstagramImageTextMultiModalDatasetConfig
+from package_name.configs.string_variables import DATASET_DIR
+from package_name.data.datamodules import InstagramImageTextDataModule
 
 
 @dataclass

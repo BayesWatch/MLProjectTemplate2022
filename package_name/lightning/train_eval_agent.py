@@ -4,7 +4,7 @@ import torch
 from hydra.utils import instantiate
 from pytorch_lightning import LightningDataModule, LightningModule
 
-from capit.base.utils import get_logger, pretty_config
+from package_name.base.utils import get_logger, pretty_config
 
 log = get_logger(__name__)
 

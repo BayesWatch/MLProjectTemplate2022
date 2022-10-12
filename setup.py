@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name="capit",
+    name="package_name",
     version="0.1.1",
     packages=[
-        "capit",
+        "package_name",
     ],
     url="",
     license="GNU General Public License v3.0",

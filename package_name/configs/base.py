@@ -3,8 +3,8 @@ from typing import Any, Optional
 
 from torch.utils.data import DataLoader
 
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.configs.string_variables import BATCH_SIZE
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.configs.string_variables import BATCH_SIZE
 
 
 @dataclass

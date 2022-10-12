@@ -4,8 +4,8 @@ from typing import Any
 from pytorch_lightning import Trainer
 from pytorch_lightning.plugins import DDPPlugin
 
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.configs.string_variables import CURRENT_EXPERIMENT_DIR
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.configs.string_variables import CURRENT_EXPERIMENT_DIR
 
 
 @dataclass

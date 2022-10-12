@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Any
 
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.models.image_text_models import CLIPImageTextModel
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.models.image_text_models import CLIPImageTextModel
 
 
 @dataclass

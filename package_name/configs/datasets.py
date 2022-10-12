@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Any, Optional
 
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.configs.base import DatasetConfig
-from capit.data.datasets import (
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.configs.base import DatasetConfig
+from package_name.data.datasets import (
     ChallengeSamplesSourceTypes,
     DummyMultiModalDataset,
     InstagramImageTextMultiModalDataset,

@@ -1,6 +1,6 @@
 import torch
 
-from capit.base import utils
+from package_name.base import utils
 
 log = utils.get_logger(__name__)
 

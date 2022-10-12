@@ -12,10 +12,10 @@ from pytorch_lightning.loggers import LightningLoggerBase
 from pytorch_lightning.tuner.tuning import Tuner
 from wandb.util import generate_id
 
-from capit.base import utils
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.configs.callbacks import LogConfigInformation
-from capit.lightning.train_eval_agent import TrainingEvaluationAgent
+from package_name.base import utils
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.configs.callbacks import LogConfigInformation
+from package_name.lightning.train_eval_agent import TrainingEvaluationAgent
 
 log = utils.get_logger(__name__)
 

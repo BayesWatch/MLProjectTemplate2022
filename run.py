@@ -14,17 +14,24 @@ install(show_locals=False, extra_lines=1, word_wrap=True, width=350)
 
 
 def collect_config_store():
-    from capit.configs.config_tree import Config, base_callbacks, wandb_callbacks
-    from capit.configs.datamodules import InstagramImageTextMultiModalDataModuleConfig
-    from capit.configs.hydra import add_hydra_configs
-    from capit.configs.loggers import (
+    from package_name.configs.config_tree import Config, base_callbacks, wandb_callbacks
+    from package_name.configs.datamodules import (
+        InstagramImageTextMultiModalDataModuleConfig,
+    )
+    from package_name.configs.hydra import add_hydra_configs
+    from package_name.configs.loggers import (
         TensorboardLoggerConfig,
         WeightsAndBiasesLoggerConfig,
     )
-    from capit.configs.mode import BaseMode
-    from capit.configs.models import CLIPImageTextMultiModalDatasetConfig
-    from capit.configs.optimizers import AdamWOptimizerConfig
-    from capit.configs.trainers import BaseTrainer, DDPTrainer, DPTrainer, MPSTrainer
+    from package_name.configs.mode import BaseMode
+    from package_name.configs.models import CLIPImageTextMultiModalDatasetConfig
+    from package_name.configs.optimizers import AdamWOptimizerConfig
+    from package_name.configs.trainers import (
+        BaseTrainer,
+        DDPTrainer,
+        DPTrainer,
+        MPSTrainer,
+    )
 
     config_store = ConfigStore.instance()
     ###################################################################################
@@ -99,8 +106,8 @@ def main(config: DictConfig):
 
     # Imports can be nested inside @hydra.main to optimize tab completion
     # https://github.com/facebookresearch/hydra/issues/934
-    from capit.base import utils
-    from capit.train_eval import train_eval
+    from package_name.base import utils
+    from package_name.train_eval import train_eval
 
     # A couple of optional utilities:
     # - disabling python warnings

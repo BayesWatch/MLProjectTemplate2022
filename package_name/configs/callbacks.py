@@ -9,13 +9,13 @@ from pytorch_lightning.callbacks import (
     TQDMProgressBar,
 )
 
-from capit.base.callbacks.wandb_callbacks import (
+from package_name.base.callbacks.wandb_callbacks import (
     LogConfigInformation,
     LogGrads,
     UploadCodeAsArtifact,
 )
-from capit.base.utils.typing_utils import get_module_import_path
-from capit.configs.string_variables import CHECKPOINT_DIR
+from package_name.base.utils.typing_utils import get_module_import_path
+from package_name.configs.string_variables import CHECKPOINT_DIR
 
 
 @dataclass
